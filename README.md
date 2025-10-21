@@ -1,1 +1,5 @@
-# LovelyChat
+# mobilapp
+
+Bu Proje suanda deneme amacli yapilmis olup sadece Birden fazla kullanıcya ulasıldıktan sonra yenıden duzenlenılecektır.
+# HEK SOFTWARE OLARAK SİZ DEGERLI KULLANICILARIMIZA SUNMAKTAN GURUR DUYUYORUZ :)
+# DESTEGINIZ BIZLER ICIN COK ONEMLI UYGULAMAYI INDIRMEKLE KALMAYIP YORUM OLARAK 5 YILDIZ VERIRSENIZ BIZI COK MUTLU EDERSINIZ.
