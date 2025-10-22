@@ -6,12 +6,8 @@ void main() {
   runApp(const LovelyChatApp());
 }
 
-// =======================================================
-// ✅ Global: Eklenen arkadaşlar listesi
 List<String> addedFriends = [];
 
-// =======================================================
-// ✅ Ana Uygulama
 class LovelyChatApp extends StatelessWidget {
   const LovelyChatApp({super.key});
 
@@ -32,8 +28,6 @@ class LovelyChatApp extends StatelessWidget {
   }
 }
 
-// =======================================================
-// ✅ Splash Ekranı
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -107,8 +101,6 @@ class _SplashScreenState extends State<SplashScreen>
   }
 }
 
-// =======================================================
-// ✅ Ana Sayfa (BottomNavigation ile)
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -130,23 +122,23 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: _currentIndex == 0
           ? AppBar(
-        title: const Text("Lov3lyChat"),
-        centerTitle: true,
-        backgroundColor: Colors.deepPurpleAccent,
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.chat_bubble_outline),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => ChatLobby(friends: addedFriends),
+              title: const Text("Lov3lyChat"),
+              centerTitle: true,
+              backgroundColor: Colors.deepPurpleAccent,
+              actions: [
+                IconButton(
+                  icon: const Icon(Icons.chat_bubble_outline),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => ChatLobby(friends: addedFriends),
+                      ),
+                    );
+                  },
                 ),
-              );
-            },
-          ),
-        ],
-      )
+              ],
+            )
           : null,
       body: _screens[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
@@ -167,8 +159,6 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
-// =======================================================
-// ✅ Ana Akış (Feed)
 class FeedScreen extends StatelessWidget {
   const FeedScreen({super.key});
 
@@ -230,8 +220,6 @@ class FeedScreen extends StatelessWidget {
   }
 }
 
-// =======================================================
-// ✅ Sosyal Ekran (Arkadaş Ekle)
 class SocialScreen extends StatefulWidget {
   const SocialScreen({super.key});
 
@@ -267,8 +255,7 @@ class _SocialScreenState extends State<SocialScreen> {
 
           return Card(
             color: Colors.deepPurple[700],
-            shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
             margin: const EdgeInsets.symmetric(vertical: 6),
             child: ListTile(
               leading: const CircleAvatar(
@@ -286,10 +273,10 @@ class _SocialScreenState extends State<SocialScreen> {
                 onPressed: isAdded
                     ? null
                     : () {
-                  setState(() {
-                    addedFriends.add(friend);
-                  });
-                },
+                        setState(() {
+                          addedFriends.add(friend);
+                        });
+                      },
                 child: Text(isAdded ? "Eklendi" : "İstek At"),
               ),
             ),
@@ -300,8 +287,6 @@ class _SocialScreenState extends State<SocialScreen> {
   }
 }
 
-// =======================================================
-// ✅ Chat Lobisi
 class ChatLobby extends StatelessWidget {
   final List<String> friends;
   const ChatLobby({super.key, required this.friends});
@@ -334,8 +319,7 @@ class ChatLobby extends StatelessWidget {
         itemBuilder: (_, i) {
           return Card(
             color: Colors.deepPurple[700],
-            shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
             margin: const EdgeInsets.symmetric(vertical: 6),
             child: ListTile(
               leading: const CircleAvatar(
@@ -363,8 +347,6 @@ class ChatLobby extends StatelessWidget {
   }
 }
 
-// =======================================================
-// ✅ Sohbet Ekranı
 class ChatScreen extends StatefulWidget {
   final String botName;
   const ChatScreen({super.key, required this.botName});
@@ -379,14 +361,8 @@ class _ChatScreenState extends State<ChatScreen> {
 
   final Map<String, List<String>> _responses = {
     "Esra": ["Merhaba! Nasılsın?", "Bugün çok güzelim 💜"],
-    "Ceyda": [
-      "Kahveye hayır diyemezsin 😄",
-      "Güzel bir sohbet olsun istiyorum."
-    ],
-    "Merve": [
-      "Yeni bir film izledin mi?",
-      "Anlayamadım canım, tekrar yazar mısın?"
-    ],
+    "Ceyda": ["Kahveye hayır diyemezsin 😄", "Güzel bir sohbet olsun istiyorum."],
+    "Merve": ["Yeni bir film izledin mi?", "Anlayamadım canım, tekrar yazar mısın?"],
     "Elif": ["Aynı bildiğin gibi 😅", "Seninle konuşmak keyifli 💫"],
     "Ahmet": ["Selam! Nasılsın?", "Bugün iş yoğun muydu?"],
     "Ayşe": ["Merhaba! Planların nasıl?", "Güzel bir gün dilerim 💖"],
@@ -431,19 +407,20 @@ class _ChatScreenState extends State<ChatScreen> {
                 final isUser = msg["sender"] == "Sen";
                 return Align(
                   alignment:
-                  isUser ? Alignment.centerRight : Alignment.centerLeft,
+                      isUser ? Alignment.centerRight : Alignment.centerLeft,
                   child: Container(
                     margin: const EdgeInsets.symmetric(vertical: 4),
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
-                      color:
-                      isUser ? Colors.deepPurpleAccent : Colors.grey[800],
+                      color: isUser
+                          ? Colors.deepPurpleAccent
+                          : Colors.grey[800],
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Text(
                       msg["msg"]!,
                       style:
-                      const TextStyle(fontSize: 16, color: Colors.white),
+                          const TextStyle(fontSize: 16, color: Colors.white),
                     ),
                   ),
                 );
@@ -469,7 +446,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 ),
                 IconButton(
                   icon:
-                  const Icon(Icons.send, color: Colors.deepPurpleAccent),
+                      const Icon(Icons.send, color: Colors.deepPurpleAccent),
                   onPressed: () => _sendMessage(_controller.text),
                 ),
               ],
@@ -481,8 +458,6 @@ class _ChatScreenState extends State<ChatScreen> {
   }
 }
 
-// =======================================================
-// ✅ Profil Ekranı
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
 
