@@ -1,4 +1,5 @@
-# mobilapp
+# CHAT-PROGRAM MADE BY DART PROGRMMİNG - 
+# LOVELY-CHAT
 
 # Edited By HEK SOFTWARE 
 # HEK SOFTWARE OLARAK SİZ DEGERLI KULLANICILARIMIZA SUNMAKTAN GURUR DUYUYORUZ :)
@@ -11,4 +12,5 @@
 ## WARNİNG İMPORTANT CONTEXT ; 
 Kullanıcı Giriş yaptıktn sonra tum yasal kosulları  ve diğer durumlarda kabul etmiş sayılır.
 # HEK SOFTWRE COMPANY ® HER HAKKI SAKLIDIR SINCE 2026
+
 
