@@ -1,5 +1,13 @@
 # mobilapp
 
-Bu Proje suanda deneme amacli yapilmis olup sadece Birden fazla kullanıcya ulasıldıktan sonra yenıden duzenlenılecektır.
+# Edited By HEK SOFTWARE 
 # HEK SOFTWARE OLARAK SİZ DEGERLI KULLANICILARIMIZA SUNMAKTAN GURUR DUYUYORUZ :)
+
 # DESTEGINIZ BIZLER ICIN COK ONEMLI UYGULAMAYI INDIRMEKLE KALMAYIP YORUM OLARAK 5 YILDIZ VERIRSENIZ BIZI COK MUTLU EDERSINIZ.
+# /////// # 
+#Uygulama,Kullanıcı Arayüzü ve Sade Katmandan olusan bir proje olmakla beraber siz degerlı kulllanıcılarımıza sunulmaktadır.
+# Uygulama yapılırken sadece bazı kısımlarda kullanıcı verilerini kullanmaktadır.
+# Kullanıcı verileri sadece uygulama gelıtırılmesı ıcın kullnılmktdır veri ihlali kati suretle ypılmmaktr.
+## WARNİNG İMPORTANT CONTEXT ; 
+Kullanıcı Giriş yaptıktn sonra tum yasal kosullrı ve diher durumlrdı kabul etmıs sayar
+# HEK SOFTWRE COMPANY ® HER HAKKI SAKLIDIR SINCE 2026
