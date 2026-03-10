@@ -9,5 +9,6 @@
 # Uygulama yapılırken sadece bazı kısımlarda kullanıcı verilerini kullanmaktadır.
 # Kullanıcı verileri sadece uygulama gelıtırılmesı ıcın kullnılmktdır veri ihlali kati suretle ypılmmaktr.
 ## WARNİNG İMPORTANT CONTEXT ; 
-Kullanıcı Giriş yaptıktn sonra tum yasal kosullrı ve diher durumlrdı kabul etmıs sayar
+Kullanıcı Giriş yaptıktn sonra tum yasal kosulları  ve diğer durumlarda kabul etmiş sayılır.
 # HEK SOFTWRE COMPANY ® HER HAKKI SAKLIDIR SINCE 2026
+
